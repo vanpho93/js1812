@@ -18,23 +18,24 @@ function getRandom2(x, y) {
 
 n = 4;
 
-*
-**
-***
 ****
+ ***
+  **
+   *
 
 */
-function veHinh(n) {
-    for(let s = ''; s.length < n;) console.log(s += '*');
-}
 // function veHinh(n) {
-//     for (let i = 1; i <= n; i++) {
-//         let s = '';
-//         for (let j = 1; j <= n; j++) {
-//             if (i >= j) s += '*'
-//         }
-//         console.log(s);
-//     }
+//     for(let s = ''; s.length < n;) console.log(s += '*');
 // }
+function veHinh(n) {
+    for (let i = 1; i <= n; i++) {
+        let s = '';
+        for (let j = 1; j <= n; j++) {
+            // i <= j ? s += '*' : s += ' ';
+            s += i <= j ? '*' : ' ';
+        }
+        console.log(s);
+    }
+}
 
 veHinh(4);
